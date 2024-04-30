@@ -4,14 +4,16 @@ import css from "../../public/css.jpg";
 import java from "../../public/java.png";
 import javascript from "../../public/javascript.png";
 import oracle from "../../public/oracle.png";
-import spring from "../../public/spring.png";
-import springBoot from "../../public/springBoot.jpg";
+import mongodb from "../../public/mongodb.jpg";
+import reactjs from "../../public/reactjs.png"
+import cpp from "../../public/cpp.png"
+
 function Experiance() {
   const cardItem = [
     {
       id: 1,
       logo: html,
-      name: "MongoDB",
+      name: "HTML",
     },
     {
       id: 2,
@@ -35,13 +37,18 @@ function Experiance() {
     },
     {
       id: 6,
-      logo: spring,
-      name: "Spring",
+      logo: mongodb,
+      name: "mongodb",
     },
     {
       id: 7,
-      logo: springBoot,
-      name: "Spring Boot",
+      logo: reactjs,
+      name: "React.js",
+    },
+    {
+      id: 8,
+      logo: cpp,
+      name: "C++",
     },
   ];
   return (
@@ -52,7 +59,7 @@ function Experiance() {
       <div>
         <h1 className="text-3xl font-bold mb-5">Experiance</h1>
         <p className="  ">
-          I've more than 2 years of experiance in below technologies.
+          I've more than 1 years of experiance in below technologies.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-7 my-3">
           {cardItem.map(({ id, logo, name }) => (
