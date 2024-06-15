@@ -5,8 +5,8 @@ import java from "../../public/java.png";
 import javascript from "../../public/javascript.png";
 import oracle from "../../public/oracle.png";
 import mongodb from "../../public/mongodb.jpg";
-import reactjs from "../../public/reactjs.png"
-import cpp from "../../public/cpp.png"
+import reactjs from "../../public/reactjs.png";
+import cpp from "../../public/cpp.png";
 
 function Experiance() {
   const cardItem = [
@@ -38,7 +38,7 @@ function Experiance() {
     {
       id: 6,
       logo: mongodb,
-      name: "mongodb",
+      name: "MongoDB",
     },
     {
       id: 7,
@@ -51,15 +51,45 @@ function Experiance() {
       name: "C++",
     },
   ];
+
+  const workExperience = [
+    {
+      company: "TechTribe",
+      position: "Web Development Intern",
+      duration: "08/2023 - 09/2023",
+      description:
+        "Completion Certificate - Designed and implemented responsive web applications. Utilized Node.js and React.js for integration with MongoDB. Executed complex Node.js statements to optimize processes.",
+    },
+    {
+      company: "Meta CraftLab",
+      position: "Full Stack Developer Intern",
+      duration: "06/2023 - 07/2024",
+      description:
+        "Internship Offer Letter - Collaborated on full stack development projects, contributing to frontend and backend solutions. Participated in team discussions, code reviews, and gained experience in agile development methodologies and version control systems.",
+    },
+  ];
+
   return (
     <div
-      name="Experiance"
+      name="Experience"
       className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
     >
       <div>
-        <h1 className="text-3xl font-bold mb-5">Experiance</h1>
+        <h1 className="text-3xl font-bold mb-5">Experience</h1>
+        <div className="mb-5">
+          {workExperience.map((experience, index) => (
+            <div key={index} className="mb-4">
+              <h2 className="text-xl font-bold">{experience.company}</h2>
+              <p className="text-sm font-medium text-gray-600">
+                {experience.position} - {experience.duration}
+              </p>
+              <p className="mt-2">{experience.description}</p>
+            </div>
+          ))}
+        </div>
+        <h1 className="text-3xl font-bold mb-5">Skills</h1>
         <p className="  ">
-          I've more than 1 years of experiance in below technologies.
+          I've more than 1 years of experience in below technologies.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-7 my-3">
           {cardItem.map(({ id, logo, name }) => (

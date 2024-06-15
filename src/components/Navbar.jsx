@@ -27,7 +27,7 @@ function Navbar() {
     },
     {
       id: 4,
-      text: "Experiance",
+      text: "Experience",
     },
     {
       id: 5,
@@ -47,7 +47,6 @@ function Navbar() {
               <p className="text-sm text-black">Web Developer</p>
             </h1>
           </div>
-          {/* desktop navbar */}
           <div>
             <ul className="hidden md:flex space-x-8">
               {navItems.map(({ id, text }) => (
@@ -74,7 +73,7 @@ function Navbar() {
         </div>
         {/* mobile navbar */}
         {menu && (
-          <div className="bg-white">
+          <div className="bg-">
             <ul className="md:hidden flex flex-col h-screen items-center justify-center space-y-3 text-xl">
               {navItems.map(({ id, text }) => (
                 <li
